@@ -1,12 +1,16 @@
-printf
+# _printf project
 ##Desciption
 The C library function int printf(const char *format, ...) sends formatted output to stdout. Declaration. Following is the declaration for printf() function.
+---
 #Requirements:
    * Create your own header file named ``` holnerton.h ```.
    * Specific compilation flag: gcc -Wall -Werror -Wextra -pedantic *.c
    * Authorized functions and macros: { write, malloc, free, va_start, va_end, va_copy, va_arg }
+---
 ##use
-* Compile all created source code .c using gcc -Wall -Werror -Wextra -pedantic *.c
+* Compile all created source code .c along with ``` holnerton.h ``` using gcc -Wall -Werror -Wextra -pedantic *.c
+* call _printf function
+---
 ##Available Format specifier
 | Format Specifiers | Description |
 --- | --- |
@@ -16,7 +20,7 @@ The C library function int printf(const char *format, ...) sends formatted outpu
 %i  | to print an integer
 ---
 ##Examples
-``` %c: ```
+``` %c ```:
 ```
 int main (void)
 {
@@ -26,7 +30,9 @@ int main (void)
 output
 ```
 $A
-``` %s: ```
+```
+---
+``` %s ```:
 ```
 int main (void)
 {
@@ -36,7 +42,9 @@ int main (void)
 output :
 ```
 $ Hello World
-```%d :```
+```
+---
+```%d ```:
 ```
 int main (void)
 {
@@ -46,6 +54,8 @@ int main (void)
 output :
 ```
 $23
+```
+---
 ##Authors
 * **Cedric Mupenzi**
 * **Beniyam Legesse**
